@@ -39,10 +39,6 @@ body {
   height: 100%;
 }
 
-.container {
-  height: 100%;
-}
-
 /* Выставляем основные настройки по-умолчанию для body */
 body {
   scroll-behavior: smooth;
