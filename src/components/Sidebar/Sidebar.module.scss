@@ -1,4 +1,42 @@
 .wrapper {
-  color: black;
-  background-color: aquamarine;
+  nav {
+    padding: 12px;
+
+    width: 264px;
+    height: 234px;
+
+    border: 1px solid #cfcfe4;
+    border-radius: 18px;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 0;
+
+    list-style-type: none;
+
+    li {
+      cursor: pointer;
+
+      color: #39414b;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 18px;
+      letter-spacing: -0.1px;
+
+      width: 240px;
+      height: 42px;
+      border-radius: 12px;
+      padding: 12px;
+
+      &:hover {
+        background-color: rgba(95, 191, 119, 0.2);
+      }
+    }
+
+    li.active {
+      color: #ffffff;
+      background-color: #5fbf77;
+    }
+  }
 }
