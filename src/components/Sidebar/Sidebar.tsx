@@ -1,20 +1,21 @@
-import { useState } from 'react';
 import styles from './Sidebar.module.scss';
 
-const Sidebar = () => {
-  const TAGS = ['Все темы', 'Логика и мышление', 'Загадки', 'Головоломки', 'Путешествия'];
+interface Props {
+  activeTag: number;
+  onChangeTag: (id: number) => void;
+  tags: string[];
+}
 
-  const [activeTag, setActiveTag] = useState(0);
-
+const Sidebar = ({ activeTag, onChangeTag, tags }: Props) => {
   return (
     <div className={styles.wrapper}>
       <nav>
         <ul>
-          {TAGS.map((str, id) => (
+          {tags.map((str, id) => (
             <li
               key={str}
               className={activeTag === id ? styles.active : ''}
-              onClick={() => setActiveTag(id)}>
+              onClick={() => onChangeTag(id)}>
               {str}
             </li>
           ))}

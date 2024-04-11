@@ -1,5 +1,28 @@
 .wrapper {
-  width: 253px;
+  cursor: pointer;
+  width: 100%;
   height: 210px;
-  background-color: goldenrod;
+
+  border-radius: 18px;
+  box-shadow: 0px 10px 13px -4px #23235f30;
+
+  .imageBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 162px;
+  }
+
+  .textBlock {
+    padding: 12px 18px 18px 18px;
+    border-radius: 0 0 18px 18px;
+    background-color: white;
+
+    p {
+      color: rgba(57, 65, 75, 1);
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 18px;
+    }
+  }
 }
